@@ -40,6 +40,11 @@
             </div>
 
             <div v-else>
+                <router-link to="/" class="menu-item add-contact" @click="menuOpen = false">
+                    <img src="../assets/Speech_Bubble.png" alt="Logo caixa de correio">
+                    <p>Minhas Conversas</p>
+                </router-link>
+
                 <router-link to="/add-contact" class="menu-item add-contact" @click="menuOpen = false">
                     <img src="../assets/Add_User_Male.png" alt="Logo caixa de correio">
                     <p>Adicionar contato</p>
@@ -65,14 +70,16 @@ import { ref, computed } from 'vue';
 
 const menuOpen = ref(false);
 
-const userLogged = ref(false);
+const userLogged = ref(true);
 
 const menuPosition = computed(() => {
     return menuOpen.value === false ? '-100%' : '0px';
 })
+
 const menuBackground = computed(() => {
     return menuOpen.value === false ? 'rgba(0, 0, 0, 0.0)' : 'rgba(0, 0, 0, 0.5)';
 })
+
 const menuPointerEvent = computed(() => {
     return menuOpen.value === false ? 'none' : 'all';
 })
@@ -116,11 +123,13 @@ section {
     position: absolute;
     height: calc(100vh - 130px);
     background-color: v-bind(menuBackground);
-    transition: ease-in-out .7s;
     pointer-events: v-bind(menuPointerEvent);
+    transition: ease-in-out .7s;
+    z-index: 1;
 }
 
 .menu {
+    z-index: 1;
     width: 70%;
     position: absolute;
     left: v-bind(menuPosition);

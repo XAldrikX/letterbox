@@ -6,19 +6,9 @@
                 <h2>Letterbox</h2>
             </div>
 
-            <h3>Cadastre-se</h3>
+            <h3>Log-In</h3>
 
             <form class="sign-in-form">
-                <div class="form-item">
-                    <label for="name">Nome: </label>
-                    <input type="text" id="name">
-                </div>
-
-                <div class="form-item">
-                    <label for="last-name">Sobrenome: </label>
-                    <input type="text" id="last-name">
-                </div>
-
                 <div class="form-item">
                     <label for="email">E-mail: </label>
                     <input type="email" id="email">
