@@ -1,6 +1,6 @@
 <template>
     <section class="chat-bubble" v-for="chat in 10" :key="chat">
-        <img src="../assets/Customer.png" alt="Foto do perfil" class="profile-pic">
+        <img src="../assets/Customer.png" alt="Foto do perfil" class="profile-pic" width="50" height="50">
 
         <div class="chat-info-wrapper">
             <div class="chat-name-date">

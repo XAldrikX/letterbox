@@ -1,15 +1,15 @@
 <template>
     <div class="content-wrapper">
         <div class="search-wrapper">
-            <input type="text">
+            <input type="text" aria-label="pesquisar">
 
             <button class="search-btn">
-                <img src="../assets/Search.png" alt="Botão de busca">
+                <img src="../assets/Search.png" alt="Botão de busca" width="30" height="30">
             </button>
         </div>
 
         <button class="create-chat">
-            <img src="../assets/Plus.png" alt="Criar conversa">
+            <img src="../assets/Plus.png" alt="Criar conversa" width="30" height="30">
         </button>
     </div>
 </template>

@@ -2,7 +2,7 @@
     <main>
         <section class="add-contact-wrapper">
             <div class="logo">
-                <img src="../assets/LetterboxBlack.png" alt="Logo caixa de correio">
+                <img src="../assets/LetterboxBlack.png" alt="Logo caixa de correio" width="45" height="45">
                 <h2>Letterbox</h2>
             </div>
 

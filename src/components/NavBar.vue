@@ -2,16 +2,16 @@
     <header>
         <nav>
             <router-link to="/" class="title-nav">
-                <img src="../assets/LetterboxWhite.png" alt="Logo caixa de correio">
+                <img src="../assets/LetterboxWhite.png" alt="Logo caixa de correio" width="35" height="35">
                 <h1>Letterbox</h1>
             </router-link>
 
             <div class="menu-open" v-show="!menuOpen" @click="menuOpen = true">
-                <img src="../assets/Menu.png" alt="Menu">
+                <img src="../assets/Menu.png" alt="Menu abrir" width="30" height="30">
             </div>
 
             <div class="menu-close" v-show="menuOpen" @click="menuOpen = false">
-                <img src="../assets/Close.png" alt="Menu">
+                <img src="../assets/Close.png" alt="Menu fechar" width="30" height="30">
             </div>
         </nav>
     </header>
@@ -19,44 +19,44 @@
     <section>
         <div class="menu">
             <div class="menu-foto-perfil">
-                <img src="../assets/Customer.png" alt="Foto de perfil">
+                <img src="../assets/Customer.png" alt="Foto de perfil" width="90" height="90">
             </div>
 
             <div v-if="!userLogged">
                 <router-link to="/sign-up" class="menu-item sign-up" @click="menuOpen = false">
-                    <img src="../assets/Add_User_Male.png" alt="Logo caixa de correio">
+                    <img src="../assets/Add_User_Male.png" alt="Cadastre-se icone" width="30" height="30">
                     <p>Cadastre-se</p>
                 </router-link>
 
                 <router-link to="/sign-in" class="menu-item sign-in" @click="menuOpen = false">
-                    <img src="../assets/Enter.png" alt="Logo caixa de correio">
+                    <img src="../assets/Enter.png" alt="Entrar icone" width="30" height="30">
                     <p>Entrar</p>
                 </router-link>
 
                 <router-link to="/about" class="menu-item about" @click="menuOpen = false">
-                    <img src="../assets/Info.png" alt="Logo caixa de correio">
+                    <img src="../assets/Info.png" alt="Sobre icone" width="30" height="30">
                     <p>Sobre</p>
                 </router-link>
             </div>
 
             <div v-else>
                 <router-link to="/" class="menu-item add-contact" @click="menuOpen = false">
-                    <img src="../assets/Speech-Bubble-black.png" alt="Logo caixa de correio">
+                    <img src="../assets/Speech-Bubble-black.png" alt="Minhas Conversas icone" width="30" height="30">
                     <p>Minhas Conversas</p>
                 </router-link>
 
                 <router-link to="/add-contact" class="menu-item add-contact" @click="menuOpen = false">
-                    <img src="../assets/Add_User_Male.png" alt="Logo caixa de correio">
+                    <img src="../assets/Add_User_Male.png" alt="Adicionar contato icone" width="30" height="30">
                     <p>Adicionar contato</p>
                 </router-link>
 
                 <router-link to="/config" class="menu-item config" @click="menuOpen = false">
-                    <img src="../assets/Settings.png" alt="Logo caixa de correio">
+                    <img src="../assets/Settings.png" alt="Configurações icone" width="30" height="30">
                     <p>Configurações</p>
                 </router-link>
 
                 <router-link to="/about" class="menu-item about" @click="menuOpen = false">
-                    <img src="../assets/Info.png" alt="Logo caixa de correio">
+                    <img src="../assets/Info.png" alt="Sobre icone" width="30" height="30">
                     <p>Sobre</p>
                 </router-link>
             </div>
@@ -70,7 +70,7 @@ import { ref, computed } from 'vue';
 
 const menuOpen = ref(false);
 
-const userLogged = ref(true);
+const userLogged = ref(false);
 
 const menuPosition = computed(() => {
     return menuOpen.value === false ? '-100%' : '0px';
