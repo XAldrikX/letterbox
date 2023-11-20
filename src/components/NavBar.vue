@@ -41,7 +41,7 @@
 
             <div v-else>
                 <router-link to="/" class="menu-item add-contact" @click="menuOpen = false">
-                    <img src="../assets/Speech_Bubble.png" alt="Logo caixa de correio">
+                    <img src="../assets/Speech-Bubble-black.png" alt="Logo caixa de correio">
                     <p>Minhas Conversas</p>
                 </router-link>
 
