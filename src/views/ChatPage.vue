@@ -17,4 +17,5 @@ main {
     background-color: var(--primary-color);
     overflow-y: scroll;
 }
+
 </style>
