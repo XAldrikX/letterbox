@@ -70,7 +70,7 @@ import { ref, computed } from 'vue';
 
 const menuOpen = ref(false);
 
-const userLogged = ref(false);
+const userLogged = ref(true);
 
 const menuPosition = computed(() => {
     return menuOpen.value === false ? '-100%' : '0px';

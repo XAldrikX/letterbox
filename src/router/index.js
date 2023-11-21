@@ -3,12 +3,18 @@ import SignUp from '@/views/SignUp.vue';
 import SignIn from '@/views/SignIn.vue';
 import AllChats from '@/views/AllChats.vue';
 import AddContact from '@/views/AddContact.vue';
+import ChatPage from '@/views/ChatPage.vue';
 
 const routes = [
 	{
 		path: '/',
 		name: 'AllChats',
 		component: AllChats
+	},
+	{
+		path: '/chat',
+		name: 'ChatPage',
+		component: ChatPage
 	},
 	{
 		path: '/sign-up',
